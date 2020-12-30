@@ -1,0 +1,107 @@
+
+:root{
+    --dark-cyan:hsl(185, 75%, 39%); /*Dark Cyan*/
+    --very-dark-satured: hsl(229, 23%, 23%);/*Very dark desaturated blue:*/
+    --dark-gray:hsl(0, 0%, 59%); /*Dark Gray*/
+    --border-color:  hsl(227, 10%, 90%);
+    --wght-regular:400;
+    --wght-bold:700;
+    --size:18px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: var(--size);
+    background-color: var(--dark-cyan);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 40vh, left 48vw top 40vh;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97%;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    width: 326px;
+    overflow: hidden;
+    box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+    display: block;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-info-img {
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: -53px; /*-48 imgSize -5 borderSize*/
+}
+
+.card-info-personal {
+    margin-top: 1.5rem;
+    color: var(--very-dark-satured);
+    font-weight: var(--wght-bold);
+    margin-bottom: 10px;
+}
+
+.card-info-personal span {
+    color: var(--dark-gray);
+    font-weight: var(--wght-regular);
+}
+
+.card-info-city {
+    margin-top: 0;
+    color: var(--dark-gray);
+    font-weight: var(--wght-regular);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.card-statistics {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.card-statistics-social {
+    text-align: center;
+}
+
+.card-statistics-social-number {
+    font-size: 1.1rem;
+    font-weight: var(--wght-bold);
+    color: var(--very-dark-satured);
+    margin-bottom: 8px;
+}
+
+.card-statistics-social-type {
+    margin-top: 0;
+    letter-spacing: 1px;
+    color: var(--dark-gray);
+    font-weight: var(--wght-regular);
+    font-size: 0.8rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
