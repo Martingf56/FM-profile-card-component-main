@@ -1,5 +1,7 @@
 # Frontend Mentor - Profile card component
 
+Can check the solution [here](https://www.frontendmentor.io/solutions/only-i-use-vanilla-css-and-html-the-layouts-with-flexbox-FX6y2VfQi)
+
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
